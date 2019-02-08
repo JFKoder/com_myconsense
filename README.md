@@ -1,2 +1,2 @@
-# com_myconsense
-Joomla component for consensebuilding
+# MyConsense Component for Joomla!
+Find the consense in your Comunity
