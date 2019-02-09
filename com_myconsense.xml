@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="0.0.1" client="site" method="upgrade">
+    <name>My Consense Component</name>
+    <author>Janick Koder</author>
+    <creationDate>Feb 2019</creationDate>
+    <copyright>Copyright Janick Koder. All rights reserved.</copyright>
+    <license>GNU General Public License version 3</license>
+    <authorEmail>system@my-shops.eu</authorEmail>
+    <authorUrl>www.my-shops.eu</authorUrl>
+    <version>0.0.1</version>
+    <description>My Consense</description>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.com_myconsense.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.com_myconsense.ini</language>
+    </languages>
+    <files>
+        <filename module="com_myconsense">com_myconsense.php</filename>
+        <filename>index.html</filename>
+        <filename>LICENSE</filename>
+        
+        <folder>template</folder>
+        <filename>com_myconsense.xml</filename>
+    </files>
+	<update> 
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+    <config>
+
+    </config>
+
+    <administration>
+		<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_myconsense'>My Consense</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>com_myconsense.php</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+		</files>
+	</administration>
+    <updateservers>
+        <server type="extension" name="Blackdale" priority="1"><![CDATA[http://updates.blackdale.com/update/modblank250/modblank250.xml]]></server>
+    </updateservers>
+</extension>
